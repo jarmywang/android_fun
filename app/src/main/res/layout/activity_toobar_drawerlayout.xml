@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tl_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <!--DrawerLayout-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--主布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_main"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/animation_drawable_fun"/>
+
+            <com.example.user.myapplication.FloatingActionMButton
+                android:id="@+id/fab"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:elevation="12dp" />
+
+            <!--<Button-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/ripple_bg" />-->
+        </LinearLayout>
+        <!--侧滑菜单-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff">
+
+            <ListView
+                android:id="@+id/lv_left_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:text="DrawerLayout" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

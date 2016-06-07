@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/sv"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.example.user.myapplication.SwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_like_plus1"
+        android:text="+1"
+        android:textColor="#fa6e6e"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cc"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/btn_cc"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+    <com.example.user.myapplication.cu.DynamicWave
+        android:id="@+id/dw"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

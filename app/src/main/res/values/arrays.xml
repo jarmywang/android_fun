@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_titles">
+        <item>垂直List</item>
+        <item>水平RecycleList</item>
+        <item>垂直Grid</item>
+        <item>水平RecycleGrid</item>
+        <item>瀑布RecycleStaggered</item>
+    </string-array>
+
+</resources>

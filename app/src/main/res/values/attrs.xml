@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContainerView">
+        <attr name="card_item_height" format="dimension" />
+        <attr name="card_item_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcView">
+        <attr name="startR" format="float"/>
+        <attr name="endR" format="float"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TiltTextView">
+        <attr name="tiltR" format="float"/>
+    </declare-styleable>
+
+</resources>

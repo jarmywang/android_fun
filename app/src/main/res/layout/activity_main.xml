@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F7E4BC"
+                android:gravity="center">
+
+    <com.example.user.myapplication.slidingcard_core.ContainerView
+        android:id="@+id/contentview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card:card_item_height = "230dp"
+        card:card_item_margin = "10dp"
+        />
+
+</RelativeLayout>

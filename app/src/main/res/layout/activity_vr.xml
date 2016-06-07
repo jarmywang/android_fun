@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.wang.vrecyclerview.VRecyclerView
+        xmlns:vr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/vr"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_gallery"
+        vr:vDivider="@color/bar_press"
+        vr:dividerHeight="3.5dp"
+        vr:layout_orientation="vertical"
+        vr:layout_type="linear" />
+
+</LinearLayout>

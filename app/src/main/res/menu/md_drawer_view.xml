@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/md_m1"
+            android:icon="@drawable/a7"
+            android:title="菜单1"/>
+
+        <item android:id="@+id/md_m2"
+            android:icon="@drawable/a7"
+            android:title="菜单2"/>
+
+        <item android:id="@+id/md_m3"
+            android:icon="@drawable/a7"
+            android:title="菜单3"/>
+
+        <item android:id="@+id/md_m4"
+            android:icon="@drawable/a7"
+            android:title="菜单4"/>
+
+    </group>
+
+    <item android:title="Version">
+        <menu>
+            <item android:icon="@drawable/ic_launcher"
+                android:title="Android"/>
+            <item android:icon="@drawable/ic_launcher"
+                android:title="Ios"/>
+        </menu>
+    </item>
+
+</menu>

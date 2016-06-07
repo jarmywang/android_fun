@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <com.example.user.myapplication.PullScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scroll_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:headerHeight="400dp"
+        app:headerVisibleHeight="200dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:text="test1"/>
+
+            <com.example.user.myapplication.ArcView
+                xmlns:arc="http://schemas.android.com/apk/res-auto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                arc:startR="35"
+                arc:endR="285"
+                android:background="#00f">
+
+            </com.example.user.myapplication.ArcView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:text="test2"/>
+
+            <com.example.user.myapplication.TiltTextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/red"
+                android:text="斜着排列的文字"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tt:tiltR="-45"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:text="test3"/>
+
+
+
+        </LinearLayout>
+
+    </com.example.user.myapplication.PullScrollView>
+
+    <ImageView
+        android:id="@+id/view_header"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="-200dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_do_score_top" />
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="90dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/logo"
+        android:background="#00f5f5f5"/>
+
+    <TextView
+        android:id="@+id/tv_bar"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0092ff"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="我的"/>
+
+</RelativeLayout>

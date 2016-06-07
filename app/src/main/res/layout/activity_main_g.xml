@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity" 
+   >
+
+    <com.example.user.myapplication.com.itlanbao.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+       android:layout_alignParentTop="true"
+        >
+    </com.example.user.myapplication.com.itlanbao.HorizontalListView>
+    <ImageView 
+        android:id="@+id/image_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizon_listview"
+        android:layout_centerInParent="true"
+      	android:clickable="true"
+        android:background="@drawable/selector_item_background"
+        />
+    <!-- android:background="@android:drawable/ic_menu_gallery" -->
+
+</RelativeLayout>
